@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="formvalidation.js"></script>
+
+
+</head>
+
+<body>
+<form>
+      
+    <fieldset>
+      <legend>Create a New Form</legend>
+
+      <label>Event Type:</label>
+          <select id = "myList">
+            <option value = "1">Birthday</option>
+            <option value = "2">Party</option>
+            <option value = "3">Marriage</option>
+            <option value = "4">Party</option>
+          </select><br><Br>
+
+
+
+
+            
+      <label>Event Title: <input type="text" id="title" style="width:800px"></label><br><br>
+     
+      
+      <label>Event Date: <input type='date' name ='date' style="width:165"> </label> <label> to <input type='date' name = 'posting' style="width:165"></label><br><br>
+
+      <label>Posting Date: <input type='date' name = 'posting' style="width:155" pattern="[0-9]{5}" required></label><br><br>
+  
+      <label> <input type="checkbox" name="registration" >Is registration required?</label><br><br>
+
+      <label> <input type="checkbox" name="family" >Is this event associated with any family programs?</label><br><br>
+
+      <label> <input type="checkbox" name="mail" >Upon registration completion, are users to receive on auto generated mail?</label><br><br>
+ 
+      <label> <input type="checkbox" name="contact" >Is there a point of contact?</label><br><br>
+  
+      <label> <input type="checkbox" name="pcontact" >Is there a hosting command point of contact?</label><br><br>
+ 
+
+      <button style="height:20px;width:100px" onclick="yesSubmit()" id="app" >Save</button>
+      <button style="height:20px;width:100px" onclick="noSubmit()" id="noapp">Cancel</button>
+
+     
+      
+</fieldset>
+</form> 
+</body>
+</html>
